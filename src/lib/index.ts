@@ -1,0 +1,1 @@
+export type { ControlledPropertyDescriptor } from './controlled-property-descriptor.interface';
