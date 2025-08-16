@@ -4,17 +4,17 @@ import { WrappedPropertyDescriptorController } from '@typedly/controller';
 // Type.
 import { GetterCallback, SetterCallback } from '@typedly/callback';
 /**
- * @description 
+ * @description The controlled descriptor is a wrapped descriptor with control over its accessors by `controller`.
  * @export
  * @interface ControlledPropertyDescriptor
- * @template [O=any] 
- * @template {keyof O} [K=keyof O] 
- * @template {K extends keyof O ? O[K] : any} [V=K extends keyof O ? O[K] : any] 
+ * @template [O=any] The type of object.
+ * @template {keyof O} [K=keyof O] The type of key.
+ * @template {K extends keyof O ? O[K] : any} [V=K extends keyof O ? O[K] : any] The type of value.
  * @template {boolean} [A=boolean] The type of active.
  * @template {boolean} [N=boolean] The type of notifiable.
  * @template {boolean} [C=boolean] The type of configurable.
  * @template {boolean} [E=boolean] The type of enumerable.
- * @template {ControlledPropertyDescriptor<O, K, V, A, N, C, E, D>} [D=ControlledPropertyDescriptor<O, K, V, A, N, C, E, any>] 
+ * @template {ControlledPropertyDescriptor<O, K, V, A, N, C, E, D>} [D=ControlledPropertyDescriptor<O, K, V, A, N, C, E, any>] The type of descriptor.
  * @extends {WrappedPropertyDescriptor<O, K, V, A, N, C, E, D>}
  */
 export interface ControlledPropertyDescriptor<
