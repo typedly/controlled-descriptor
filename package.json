@@ -1,6 +1,6 @@
 {
   "name": "@typedly/controlled-descriptor",
-  "version": "10.0.0",
+  "version": "0.0.1",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions package for controlled property descriptor.",
   "license": "MIT",
