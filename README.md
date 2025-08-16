@@ -7,7 +7,7 @@
   />
 </a>
 
-## typedly/descriptor
+## typedly/controlled-descriptor
 
 <!-- npm badge -->
 [![npm version][typedly-npm-badge-svg]][typedly-npm-badge]
