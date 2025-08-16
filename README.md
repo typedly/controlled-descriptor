@@ -51,7 +51,7 @@ npm install @typedly/controlled-descriptor --save-peer
 import {
   // Interface.
   ControlledPropertyDescriptor
-} from '@typedly/descriptor';
+} from '@typedly/controlled-descriptor';
 ```
 
 ## Interfaces
