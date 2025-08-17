@@ -9,8 +9,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@typedly/controller": "^0.2.0",
-    "@typedly/descriptor": "^10.0.0"
+    "@typedly/controller": "^0.3.0",
+    "@typedly/descriptor": "^10.1.1"
   },
   "scripts": {
     "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",
