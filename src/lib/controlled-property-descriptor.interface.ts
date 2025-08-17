@@ -14,7 +14,7 @@ import { GetterCallback, SetterCallback } from '@typedly/callback';
  * @template {boolean} [N=boolean] The type of notifiable.
  * @template {boolean} [C=boolean] The type of configurable.
  * @template {boolean} [E=boolean] The type of enumerable.
- * @template {ControlledPropertyDescriptor<O, K, V, A, N, C, E, D>} [D=ControlledPropertyDescriptor<O, K, V, A, N, C, E, any>] The type of descriptor.
+ * @template {ControlledPropertyDescriptor<O, K, V, A, N, C, E, D> | PropertyDescriptor} [D=ControlledPropertyDescriptor<O, K, V, A, N, C, E, any>] The type of descriptor.
  * @extends {WrappedPropertyDescriptor<O, K, V, A, N, C, E, D>}
  */
 export interface ControlledPropertyDescriptor<
@@ -25,7 +25,7 @@ export interface ControlledPropertyDescriptor<
   N extends boolean = boolean,
   C extends boolean = boolean,
   E extends boolean = boolean,
-  D extends ControlledPropertyDescriptor<O, K, V, A, N, C, E, D> = ControlledPropertyDescriptor<O, K, V, A, N, C, E, any>,
+  D extends ControlledPropertyDescriptor<O, K, V, A, N, C, E, D> | PropertyDescriptor = ControlledPropertyDescriptor<O, K, V, A, N, C, E, any>,
 > extends WrappedPropertyDescriptor<O, K, V, A, N, C, E, D> {
 
   get active(): A | { onGet?: boolean; onSet?: boolean };
